@@ -3,8 +3,16 @@
     padding: 0;
 }
 
+/* Variables */
+$primary-color: #8C27D6;
+$secondary-color: #FFA500;
+$bg-color: #000;
+$transition: color 0.1s, background-color 0.2s ease-in-out;
+$skills-barlength: 0%
+
+
 body{
-    background: #000;
+    background-color: #000;
     font-family: barlow condensed;
 }
 
@@ -445,4 +453,31 @@ input::placeholder, textarea::placeholder{
     font-weight: 900;
     font-size: 80px;
     letter-spacing: 3px;
+}
+
+.skills{
+    padding: 1em 0;
+}
+
+.skills__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills_bar{
+    width: 175px;
+    height: 8px;
+    background-color: #706F6F;
+
+    &:after{
+        content: ¨¨;
+        position: absolute;
+        background-color: var(--primary-color);
+        transition: var(--transition);
+    }
+}
+
+.skills__bar--70::after{
+    transform: translateX(var(--skills-bar-length));
 }
