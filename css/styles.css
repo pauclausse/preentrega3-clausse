@@ -1,10 +1,11 @@
+/* Variables */
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #000;
+  background-color: #000;
   font-family: barlow condensed;
 }
 
@@ -439,6 +440,65 @@ input::placeholder, textarea::placeholder {
   font-weight: 900;
   font-size: 80px;
   letter-spacing: 3px;
+}
+
+.participante {
+  display: flex;
+  align-items: center;
+}
+
+.participante__info__nombre {
+  color: #FFA500;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+.participante__info__apodo {
+  color: #FFA500;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.participante__info__datos {
+  color: #fff;
+  font-size: 25px;
+}
+.participante__info__datos p {
+  font-weight: 400;
+  line-height: 20px;
+}
+.participante__info__datos p span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.participante__info__datos .info__datos {
+  padding-top: 20px;
+}
+
+.skills {
+  padding-left: 20px;
+  border-left: #8C27D6 1px solid;
+}
+
+.skills__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills__bar {
+  width: 200px;
+  height: 15px;
+  background-color: #8C27D6;
+  position: relative;
+  margin-left: 25px;
+}
+
+.skills__tech {
+  color: #8C27D6;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

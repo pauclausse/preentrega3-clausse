@@ -1,15 +1,9 @@
+@import "_variables.scss";
+
 * {
     margin: 0;
     padding: 0;
 }
-
-/* Variables */
-$primary-color: #8C27D6;
-$secondary-color: #FFA500;
-$bg-color: #000;
-$transition: color 0.1s, background-color 0.2s ease-in-out;
-$skills-barlength: 0%
-
 
 body{
     background-color: #000;
@@ -455,8 +449,53 @@ input::placeholder, textarea::placeholder{
     letter-spacing: 3px;
 }
 
+.participante{
+    display: flex;
+    align-items: center;
+}
+
+.participante__info__nombre{
+    color: $secondary-color;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 15px;
+}
+
+.participante__info__apodo{
+    color: $secondary-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+// .info__datos{
+//     display: flex;
+// }
+
+.participante__info__datos{
+    color: $clear-text;
+    // display: flex;
+    font-size: 25px;
+    // position: absolute;
+    p{
+        // padding-left: 30px;
+        font-weight: 400;
+        line-height: 20px;
+
+        span{
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    .info__datos{
+        padding-top: 20px;
+    }
+}
+
 .skills{
-    padding: 1em 0;
+    padding-left: 20px;
+    border-left: $primary-color 1px solid;
 }
 
 .skills__items{
@@ -465,19 +504,24 @@ input::placeholder, textarea::placeholder{
     justify-content: space-between;
 }
 
-.skills_bar{
-    width: 175px;
-    height: 8px;
-    background-color: #706F6F;
+.skills__bar{
+    width: $skills-bar-length;
+    height: 15px;
+    background-color: $primary-color;
+    position: relative;
+    // overflow: hidden;
+    margin-left: 25px;
 
-    &:after{
-        content: ¨¨;
-        position: absolute;
-        background-color: var(--primary-color);
-        transition: var(--transition);
-    }
+    // &::after{
+    //     content: "";
+    //     position: absolute;
+    //     background-color: $primary-color;
+    //     left: -175px;
+    //     // animation: skills-bar-length 2s;
+    // }
 }
 
-.skills__bar--70::after{
-    transform: translateX(var(--skills-bar-length));
+.skills__tech{
+    color: $primary-color;
+    font-size: 20px;
 }
