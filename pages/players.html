@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Players</title>
     <meta name="description" content="equipos de players de La Casa Gamer">
     <meta name="keywords" content="gaming gamer game esports valorant csgo videojuego juego-en-linea">
@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="container navbar navbar-dark bg-dark fixed-top ">
             <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img class="navbar__logo__img" src="../img/logo-casa-gamer.png" alt="logo-casa-gamer">
@@ -52,187 +52,940 @@
         </nav>
     </header>
     <main>
+        <!-- Franja violeta -->
         <section class="navbar__violeta">
-            <div ></div>
-        </section>
-        <section id="team-1">
-            <div class="section__header">
-                <!-- Team 1 -->
-                <h2 class="section__title">Team 1</h2>
+            <div class="filtro__teams">
+                <!-- inputs filtros teams -->
+                <input type="radio" name="seleccionado" id="team-1">
+                <input type="radio" name="seleccionado" id="team-2">
+                <input type="radio" name="seleccionado" id="team-3">
+                <input type="radio" name="seleccionado" id="team-4">
+                <input type="radio" name="seleccionado" id="team-5">
+                <input type="radio" name="seleccionado" id="todos" :checked>
+
+                <!-- labels filtros teams -->
+                <div class="container__labels">
+                    <label for="team-1">Team 1</label>
+                    <label for="team-2">Team 2</label>
+                    <label for="team-3">Team 3</label>
+                    <label for="team-4">Team 4</label>
+                    <label for="team-5">Team 5</label>
+                    <label for="todos">Todos</label>
+                </div>
             </div>
-            <!-- player 1 -->
-            <div class="section__teams container">
-                <div class="participante row">
-                    <div class="participante__foto col-3">
-                        <img src="../img/gamer1@2x.png" alt="">
-                    </div>
-                    <div class="participante__info col-6">
-                        <h4 class="participante__info__nombre">Santiago Galvis Ruiz</h4>
-                        <h3 class="participante__info__apodo">DaveeyS</h3>
-                        <div class="participante__info__datos">
-                            <div class="info__datos">
-                            <p><span>edad</span> 23 años</p>
-                            <p><span>nacionalidad</span> Colombia</p>
-                            <p><span>rol</span> Capitan</p>
+        </section>
+        <section class="section__teams">
+            <div class="team-1">
+                <div class="section__header">
+                    <!-- Team 1 -->
+                    <h2 class="section__title">Team 1</h2>
+                </div>
+                <!-- player 1 -->
+                <div class="section__teams container">
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer1@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Santiago Galvis Ruiz</h4>
+                            <h3 class="participante__info__apodo">DaveeyS</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="participante__skilss skills col-3">
-                        <div class="skills__items">
-                            <p class="skills__tech">Velocidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    <!-- Player 2 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer2@2x.png" alt="">
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Estrategia</p>
-                            <div class="skills__bar skills__bar--50"></div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Micaela Lorena</h4>
+                            <h3 class="participante__info__apodo">Frix</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Punteria</p>
-                            <div class="skills__bar skills__bar--30"></div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Agilidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    </div>
+                    <!-- Player 3 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer3@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Nicolás Martin Ferari</h4>
+                            <h3 class="participante__info__apodo">Klaus</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 24 años</p>
+                                <p><span>nacionalidad</span> Argentina</p>
+                                <p><span>rol</span> Player</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 4 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer4@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Romina Alvarez</h4>
+                            <h3 class="participante__info__apodo">Shyz</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 5 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer5@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Juan Pablo Lopez</h4>
+                            <h3 class="participante__info__apodo">NagZet</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Chile</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Player 2 -->
-                <div class="participante row">
-                    <div class="participante__foto col-3">
-                        <img src="../img/gamer2@2x.png" alt="">
-                    </div>
-                    <div class="participante__info col-6">
-                        <h4 class="participante__info__nombre">Micaela Lorena</h4>
-                        <h3 class="participante__info__apodo">Frix</h3>
-                        <div class="participante__info__datos">
-                            <div class="info__datos">
-                            <p><span>edad</span> 23 años</p>
-                            <p><span>nacionalidad</span> Colombia</p>
-                            <p><span>rol</span> Capitan</p>
+            </div>
+            <div class="team-2">
+                <div class="section__header">
+                    <!-- Team 1 -->
+                    <h2 class="section__title">Team 2</h2>
+                </div>
+                <!-- player 1 -->
+                <div class="section__teams container">
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer1@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Santiago Galvis Ruiz</h4>
+                            <h3 class="participante__info__apodo">DaveeyS</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="participante__skilss skills col-3">
-                        <div class="skills__items">
-                            <p class="skills__tech">Velocidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    <!-- Player 2 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer2@2x.png" alt="">
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Estrategia</p>
-                            <div class="skills__bar skills__bar--50"></div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Micaela Lorena</h4>
+                            <h3 class="participante__info__apodo">Frix</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Punteria</p>
-                            <div class="skills__bar skills__bar--30"></div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Agilidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    </div>
+                    <!-- Player 3 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer3@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Nicolás Martin Ferari</h4>
+                            <h3 class="participante__info__apodo">Klaus</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 24 años</p>
+                                <p><span>nacionalidad</span> Argentina</p>
+                                <p><span>rol</span> Player</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 4 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer4@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Romina Alvarez</h4>
+                            <h3 class="participante__info__apodo">Shyz</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 5 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer5@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Juan Pablo Lopez</h4>
+                            <h3 class="participante__info__apodo">NagZet</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Chile</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Player 3 -->
-                <div class="participante row">
-                    <div class="participante__foto col-3">
-                        <img src="../img/gamer3@2x.png" alt="">
-                    </div>
-                    <div class="participante__info col-6">
-                        <h4 class="participante__info__nombre">Nicolás Martin Ferari</h4>
-                        <h3 class="participante__info__apodo">Klaus</h3>
-                        <div class="participante__info__datos">
-                            <div class="info__datos">
-                            <p><span>edad</span> 24 años</p>
-                            <p><span>nacionalidad</span> Argentina</p>
-                            <p><span>rol</span> Player</p>
+            </div>
+            <div class="team-3">
+                <div class="section__header">
+                    <!-- Team 1 -->
+                    <h2 class="section__title">Team 3</h2>
+                </div>
+                <!-- player 1 -->
+                <div class="section__teams container">
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer1@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Santiago Galvis Ruiz</h4>
+                            <h3 class="participante__info__apodo">DaveeyS</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="participante__skilss skills col-3">
-                        <div class="skills__items">
-                            <p class="skills__tech">Velocidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    <!-- Player 2 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer2@2x.png" alt="">
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Estrategia</p>
-                            <div class="skills__bar skills__bar--50"></div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Micaela Lorena</h4>
+                            <h3 class="participante__info__apodo">Frix</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Punteria</p>
-                            <div class="skills__bar skills__bar--30"></div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Agilidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    </div>
+                    <!-- Player 3 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer3@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Nicolás Martin Ferari</h4>
+                            <h3 class="participante__info__apodo">Klaus</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 24 años</p>
+                                <p><span>nacionalidad</span> Argentina</p>
+                                <p><span>rol</span> Player</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 4 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer4@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Romina Alvarez</h4>
+                            <h3 class="participante__info__apodo">Shyz</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 5 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer5@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Juan Pablo Lopez</h4>
+                            <h3 class="participante__info__apodo">NagZet</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Chile</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Player 4 -->
-                <div class="participante row">
-                    <div class="participante__foto col-3">
-                        <img src="../img/gamer4@2x.png" alt="">
-                    </div>
-                    <div class="participante__info col-6">
-                        <h4 class="participante__info__nombre">Romina Alvarez</h4>
-                        <h3 class="participante__info__apodo">Shyz</h3>
-                        <div class="participante__info__datos">
-                            <div class="info__datos">
-                            <p><span>edad</span> 23 años</p>
-                            <p><span>nacionalidad</span> Colombia</p>
-                            <p><span>rol</span> Capitan</p>
+            </div>
+            <div class="team-4">
+                <div class="section__header">
+                    <!-- Team 1 -->
+                    <h2 class="section__title">Team 4</h2>
+                </div>
+                <!-- player 1 -->
+                <div class="section__teams container">
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer1@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Santiago Galvis Ruiz</h4>
+                            <h3 class="participante__info__apodo">DaveeyS</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="participante__skilss skills col-3">
-                        <div class="skills__items">
-                            <p class="skills__tech">Velocidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    <!-- Player 2 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer2@2x.png" alt="">
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Estrategia</p>
-                            <div class="skills__bar skills__bar--50"></div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Micaela Lorena</h4>
+                            <h3 class="participante__info__apodo">Frix</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Punteria</p>
-                            <div class="skills__bar skills__bar--30"></div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Agilidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    </div>
+                    <!-- Player 3 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer3@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Nicolás Martin Ferari</h4>
+                            <h3 class="participante__info__apodo">Klaus</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 24 años</p>
+                                <p><span>nacionalidad</span> Argentina</p>
+                                <p><span>rol</span> Player</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 4 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer4@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Romina Alvarez</h4>
+                            <h3 class="participante__info__apodo">Shyz</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 5 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer5@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Juan Pablo Lopez</h4>
+                            <h3 class="participante__info__apodo">NagZet</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Chile</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Player 5 -->
-                <div class="participante row">
-                    <div class="participante__foto col-3">
-                        <img src="../img/gamer5@2x.png" alt="">
-                    </div>
-                    <div class="participante__info col-6">
-                        <h4 class="participante__info__nombre">Juan Pablo Lopez</h4>
-                        <h3 class="participante__info__apodo">NagZet</h3>
-                        <div class="participante__info__datos">
-                            <div class="info__datos">
-                            <p><span>edad</span> 23 años</p>
-                            <p><span>nacionalidad</span> Chile</p>
-                            <p><span>rol</span> Capitan</p>
+            </div>
+            <div class="team-5">
+                <div class="section__header">
+                    <!-- Team 1 -->
+                    <h2 class="section__title">Team 5</h2>
+                </div>
+                <!-- player 1 -->
+                <div class="section__teams container">
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer1@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Santiago Galvis Ruiz</h4>
+                            <h3 class="participante__info__apodo">DaveeyS</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="participante__skilss skills col-3">
-                        <div class="skills__items">
-                            <p class="skills__tech">Velocidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    <!-- Player 2 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer2@2x.png" alt="">
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Estrategia</p>
-                            <div class="skills__bar skills__bar--50"></div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Micaela Lorena</h4>
+                            <h3 class="participante__info__apodo">Frix</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Punteria</p>
-                            <div class="skills__bar skills__bar--30"></div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
-                        <div class="skills__items">
-                            <p class="skills__tech">Agilidad</p>
-                            <div class="skills__bar skills__bar--70"></div>
+                    </div>
+                    <!-- Player 3 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer3@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Nicolás Martin Ferari</h4>
+                            <h3 class="participante__info__apodo">Klaus</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 24 años</p>
+                                <p><span>nacionalidad</span> Argentina</p>
+                                <p><span>rol</span> Player</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 4 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer4@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Romina Alvarez</h4>
+                            <h3 class="participante__info__apodo">Shyz</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Colombia</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 5 -->
+                    <div class="participante row">
+                        <div class="participante__foto col-3">
+                            <img src="../img/gamer5@2x.png" alt="">
+                        </div>
+                        <div class="participante__info col-6">
+                            <h4 class="participante__info__nombre">Juan Pablo Lopez</h4>
+                            <h3 class="participante__info__apodo">NagZet</h3>
+                            <div class="participante__info__datos">
+                                <div class="info__datos">
+                                <p><span>edad</span> 23 años</p>
+                                <p><span>nacionalidad</span> Chile</p>
+                                <p><span>rol</span> Capitan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participante__skilss skills col-3">
+                            <div class="skills__items">
+                                <p class="skills__tech">Velocidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Estrategia</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Punteria</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__items">
+                                <p class="skills__tech">Agilidad</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,7 +994,7 @@
     </main>
     <footer class="page__footer">
         <div class="container">
-            <div class="row">
+            <div class="row footer">
                 <div class="col-9">
                     <a href="index.html">
                         <img class="footer__logo" src="../img/logo-casa-gamer.png" alt="">
